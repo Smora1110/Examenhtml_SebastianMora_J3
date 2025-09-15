@@ -6,7 +6,7 @@ Este repositorio contiene la maqueta estática para el sitio web corporativo de 
 
 Puedes ver la maqueta desplegada en el siguiente enlace:
 
-[**Ver LuxTime en vivo**](https://paulasebas.netlify.app/) 
+[**Ver LuxTime en vivo**](https://luxtimeblog.netlify.app/) 
 
 ## Contexto del Proyecto
 
