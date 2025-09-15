@@ -1,0 +1,335 @@
+/* ===================== RESET ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background: #f7f7f7;
+  color: #111;
+  height: 100%;
+}
+/* Forzar que body ocupe todo el alto de la ventana */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+}
+
+
+/* ===================== MENU ===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #111;
+  padding: 14px 0;
+  display: inline-block;
+}
+.menu a {
+  color: #111;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+}
+.hamburguesa {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111;
+}
+
+/* ===================== CONTACTO ===================== */
+.contacto {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.formulario h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #111;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.lead {
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* ===================== FORMULARIO ===================== */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.1);
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #e74c3c;
+}
+
+input:valid,
+textarea:valid {
+  border-color: #2ecc71;
+}
+
+.error {
+  display: none;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  font-weight: 500;
+}
+
+input:invalid + .error,
+textarea:invalid + .error {
+  display: block;
+}
+
+input:required:placeholder-shown + .error,
+textarea:required:placeholder-shown + .error {
+  display: none;
+}
+
+/* ===================== ACCIONES ===================== */
+.actions {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.btn {
+  background: #111;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* ===================== TARJETA DE CONTACTO ===================== */
+.info-contacto {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.info-contacto h2 {
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.info-contacto h3 {
+  font-size: 1.2rem;
+  color: #111;
+  margin-top: 1.5rem;
+}
+.info-contacto p {
+  color: #555;
+  line-height: 1.5;
+}
+.info-contacto a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+.info-contacto a:hover {
+  color: #555;
+  border-color: #555;
+}
+
+.redes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.redes a {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #111;
+  transition: background 0.3s ease;
+}
+
+.redes a:hover {
+  background: #ddd;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 32px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ===================== MEDIA QUERIES ===================== */
+@media (max-width: 1024px) {
+  .contacto {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+  .info-contacto {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+  .redes a {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hamburguesa {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 99;
+  }
+  .menu a {
+    margin: 0;
+    padding: 8px;
+    font-weight: 500;
+    color: #111;
+    display: block;
+  }
+  .menu.activo {
+    display: flex;
+  }
+  .container,
+  .contacto,
+  .footer-container {
+    padding: 0 12px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario h1,
+  .formulario p {
+    margin-left: 5%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .redes a {
+    width: 50%;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

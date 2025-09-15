@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LuxTime — Detalle Modelo C001</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/detalle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="/">LuxTime</a>
+        <button class="hamburguesa" id="btnHamburguesa" aria-label="Abrir menú">
+          ☰
+        </button>
+        <nav class="menu" id="menu">
+          <a href="/">Inicio</a>
+          <a href="/pages/catalogo.html">Catálogo</a>
+          <a href="/pages/historia.html">Historia</a>
+          <a href="/pages/contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="detalle">
+        <div class="visor">
+          <img
+            src="/images/C001/reloj-0901.png"
+            alt="Modelo C001 color 1"
+            class="img1"
+          />
+          <img
+            src="/images/C001/reloj-0902.png"
+            alt="Modelo C001 color 2"
+            class="img2"
+          />
+          <img
+            src="/images/C001/reloj-0903.png"
+            alt="Modelo C001 color 3"
+            class="img3"
+          />
+          <span class="grabado-texto"></span>
+        </div>
+
+        <div class="info">
+          <h1>Modelo C001</h1>
+          <p class="precio">$290</p>
+          <p class="descripcion">
+            Caja pulida en acero premium y cristal resistente a rayaduras. 
+            Pensado para acompañar cada ocasión especial.
+          </p>
+          <ul>
+            <li>Material: Acero inoxidable</li>
+            <li>Tamaño: 42 mm</li>
+            <li>Peso: 157 g</li>
+          </ul>
+          <p><strong>Opciones de personalización:</strong></p>
+          <input type="radio" name="color" id="color1" checked />
+          <input type="radio" name="color" id="color2" />
+          <input type="radio" name="color" id="color3" />
+          <div class="opciones">
+            <label for="color1" style="background: #000"></label>
+            <label for="color2" style="background: #c49a6c"></label>
+            <label for="color3" style="background: #444"></label>
+          </div>
+          <div class="grabado">
+            <h4>Personaliza tu grabado</h4>
+
+            <input type="radio" name="grabado" id="grabado1" checked />
+            <input type="radio" name="grabado" id="grabado2" />
+            <input type="radio" name="grabado" id="grabado3" />
+
+            <div class="opciones-grabado">
+              <label for="grabado1">“Mi Estilo”</label>
+              <label for="grabado2">“Edición Limitada”</label>
+              <label for="grabado3">“Para Siempre”</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relacionados">
+        <h2>Productos relacionados</h2>
+
+        <!-- Controles invisibles -->
+        <input type="radio" name="slide" id="s1" checked />
+        <input type="radio" name="slide" id="s2" />
+
+              <!-- Contenedor -->
+      <div class="carrusel-css">
+        <div class="grupo">
+          <a href="/pages/detalle-b002.html">
+            <article>
+              <img src="/images/E004/reloj-2001.png" alt="Relacionado 1" />
+              <p>Modelo E004</p>
+            </article>
+          </a>
+          <a href="/pages/detalle-a004.html">
+            <article>
+              <img src="/images/E003/reloj-1901.png" alt="Relacionado 1" />
+              <p>Modelo E003</p>
+            </article>
+          </a>
+          <a href="/pages/detalle-d003.html">
+            <article>
+              <img src="/images/E002/reloj-1801.png" alt="Relacionado 1" />
+              <p>Modelo E002</p>
+            </article>
+          </a>
+        </div>
+        <div class="grupo">
+          <a href="/pages/detalle-e001.html">
+            <article>
+              <img src="/images/E001/reloj-1701.png" alt="Relacionado 1" />
+              <p>Modelo E001</p>
+            </article>
+          </a>
+          <a href="/pages/detalle-c001.html">
+            <article>
+              <img src="/images/D004/reloj-1601.png" alt="Relacionado 1" />
+              <p>Modelo D004</p>
+            </article>
+          </a>
+          <a href="/pages/detalle-a001.html">
+            <article>
+              <img src="/images/D003/reloj-1501.png" alt="Relacionado 1" />
+              <p>Modelo D003</p>
+            </article>
+          </a>
+        </div>
+      </div>
+        <!-- Botones como labels -->
+        <div class="controles">
+          <label for="s1" class="prev">‹</label>
+          <label for="s2" class="next">›</label>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 LuxTime — Todos los derechos reservados</p>
+        <nav><a href="#">Privacidad</a> | <a href="#">Términos</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>

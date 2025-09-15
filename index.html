@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LuxTime — Home</title>
+    <!-- Fuente Lato desde Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- ==================== ENCABEZADO ==================== -->
+    <header class="header">
+      <div class="container">
+        <!-- Logo de la marca -->
+        <a class="logo" href="#">LuxTime</a>
+
+        <!-- Botón hamburguesa (solo visible en móviles) -->
+        <button class="hamburguesa" id="btnHamburguesa" aria-label="Abrir menú">
+          ☰
+        </button>
+
+        <!-- Menú de navegación -->
+        <nav class="menu">
+          <a href="#">Inicio</a>
+          <a href="/pages/catalogo.html">Catálogo</a>
+          <a href="/pages/historia.html">Historia</a>
+          <a href="/pages/contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==================== SECCIÓN HERO ==================== -->
+      <section class="hero">
+        <!-- Capas de fondo decorativas -->
+        <div class="fondo fondo1" aria-hidden="true"></div>
+        <div class="fondo fondo2" aria-hidden="true"></div>
+        <div class="fondo fondo3" aria-hidden="true"></div>
+        <div class="overlay"></div>
+
+        <!-- Contenido principal del hero -->
+        <div class="hero-contenido">
+          <div class="texto">
+            <h1>LuxTime — Craft & Precision</h1>
+            <p>
+              Relojes de autor con alma mecánica. Diseño atemporal y detalles
+              hechos a mano.
+            </p>
+            <a class="boton" href="/pages/catalogo.html">Ver colección</a>
+          </div>
+
+          <!-- Imagen principal del hero -->
+          <div class="imagen-reloj">
+            <img src="images/watch-main-2.png" alt="Reloj principal LuxTime" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SECCIÓN POLAROIDS ==================== -->
+      <!-- Mini galería tipo polaroid para mostrar momentos de marca -->
+      <section class="polaroids">
+        <div class="polaroid p1">
+          <img src="images/polaroid-01.png" alt="Modelo A" />
+          <span>Edición 1955</span>
+        </div>
+        <div class="polaroid p2">
+          <img src="images/polaroid-02.png" alt="Modelo B" />
+          <span>En el taller</span>
+        </div>
+        <div class="polaroid p3">
+          <img src="images/polaroid-03.png" alt="Modelo C" />
+          <span>Maquinaria</span>
+        </div>
+        <div class="polaroid p4">
+          <img src="images/polaroid-04.png" alt="Modelo D" />
+          <span>Elegancia</span>
+        </div>
+        <div class="polaroid p5">
+          <img src="images/polaroid-05.png" alt="Modelo E" />
+          <span>Piel premium</span>
+        </div>
+        <div class="polaroid p6">
+          <img src="images/polaroid-06.png" alt="Modelo F" />
+          <span>Edición limitada</span>
+        </div>
+      </section>
+
+      <!-- ==================== SECCIÓN CATÁLOGO ==================== -->
+      <section id="catalogo" class="coleccion">
+        <h2>Modelos destacados</h2>
+
+        <!-- Tarjetas con productos destacados -->
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="images/A001/reloj-0101.png" alt="Modelo A001" />
+            <h3 class="nombre">Modelo A001</h3>
+            <p class="precio">$250</p>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span>★</span><span>★</span>
+            </div>
+            <a class="ver" href="/pages/detalle-a001.html">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="images/B002/reloj-0601.png" alt="Modelo B002" />
+            <h3 class="nombre">Modelo B002</h3>
+            <p class="precio">$320</p>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span class="llena">★</span
+              ><span>★</span>
+            </div>
+            <a class="ver" href="/pages/detalle-b002.html">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="images/C001/reloj-0901.png" alt="Modelo C001" />
+            <h3 class="nombre">Modelo C001</h3>
+            <p class="precio">$290</p>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span>
+            </div>
+            <a class="ver" href="/pages/detalle-c001.html">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="images/D003/reloj-1501.png" alt="Modelo D003" />
+            <h3 class="nombre">Modelo D003</h3>
+            <p class="precio">$350</p>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span>★</span><span>★</span>
+            </div>
+            <a class="ver" href="/pages/detalle-d003.html">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="images/E001/reloj-1701.png" alt="Modelo E001" />
+            <h3 class="nombre">Modelo E001</h3>
+            <p class="precio">$400</p>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span class="llena">★</span
+              ><span>★</span>
+            </div>
+            <a class="ver" href="/pages/detalle-e001.html">Ver detalles</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="images/A004/reloj-0401.png" alt="Modelo A004" />
+            <h3 class="nombre">Modelo A004</h3>
+            <p class="precio">$280</p>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span>★</span><span>★</span>
+            </div>
+            <a class="ver" href="/pages/detalle-a004.html">Ver detalles</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== SECCIÓN HISTORIA ==================== -->
+      <section class="historia">
+        <div class="historia-grid">
+          <div class="resumen">
+            <h2>Resumen corporativo</h2>
+            <p>
+              <strong>Contexto:</strong> LuxTime nace en 1950 como taller
+              familiar de relojería. Desde entonces producimos piezas con
+              atención al detalle.
+            </p>
+            <p>
+              <strong>Misión:</strong> Crear relojes duraderos que conecten
+              diseño y técnica.
+            </p>
+            <p>
+              <strong>Visión:</strong> Ser referencia en relojería de autor a
+              nivel internacional.
+            </p>
+            <p>
+              <strong>Valores:</strong> Precisión, artesanía, sostenibilidad.
+            </p>
+          </div>
+          <div class="video-caja">
+            <video controls>
+              <source src="/videos/video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="timeline">
+          <h3>Línea del tiempo</h3>
+          <div class="barra">
+            <div class="hito">
+              <div class="punto"></div>
+              <time>1960</time>
+              <div class="burbuja">
+                <img src="images/history-2005.png" alt="" />
+                <p>Fundación: primer taller</p>
+                <time>1960</time>
+              </div>
+            </div>
+            <div class="hito">
+              <div class="punto"></div>
+              <time>1990</time>
+              <div class="burbuja">
+                <img src="images/history-2010.png" alt="" />
+                <p>Primera colección</p>
+                <time>1990</time>
+              </div>
+            </div>
+            <div class="hito">
+              <div class="punto"></div>
+              <time>1995</time>
+              <div class="burbuja">
+                <img src="images/history-2015.png" alt="" />
+                <p>Expansión mercado</p>
+                <time>1995</time>
+              </div>
+            </div>
+            <div class="hito">
+              <div class="punto"></div>
+              <time>2000</time>
+              <div class="burbuja">
+                <img src="images/history-2020.png" alt="" />
+                <p>Edición limitada</p>
+                <time>2000</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== SECCIÓN TESTIMONIOS ==================== -->
+      <section class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="lista-test">
+          <blockquote class="test">
+            <p>"Un reloj que combina arte y exactitud. Lo recomiendo."</p>
+            <footer>— María R., clienta</footer>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span class="llena">★</span
+              ><span>★</span>
+            </div>
+          </blockquote>
+          <blockquote class="test">
+            <p>"Servicio y detalles que impresionan. Gran pieza."</p>
+            <footer>— Andrés P., coleccionista</footer>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span class="llena">★</span
+              ><span>★</span>
+            </div>
+          </blockquote>
+          <blockquote class="test">
+            <p>"Calidad en cada componente. Empresa con visión."</p>
+            <footer>— Laura G., ex-empleada</footer>
+            <div class="estrellas">
+              <span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span><span class="llena">★</span
+              ><span class="llena">★</span>
+            </div>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 LuxTime — Todos los derechos reservados</p>
+        <nav><a href="#">Privacidad</a> | <a href="#">Términos</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>

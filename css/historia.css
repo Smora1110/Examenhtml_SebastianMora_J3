@@ -1,0 +1,446 @@
+/* ===================== RESET ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+/* ===================== CONTAINERS ===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===================== HEADER ===================== */
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #111;
+  padding: 14px 0;
+  display: inline-block;
+}
+.menu a {
+  color: #111;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+}
+.hamburguesa {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111;
+}
+
+/* ===================== HERO HISTORIA ===================== */
+.hero-historia {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("../images/hero-historia.png") center/cover no-repeat;
+}
+.hero-historia .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(51, 51, 51, 0.6);
+  z-index: 1;
+}
+.hero-historia .hero-contenido {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 800px;
+  padding: 0 20px; 
+}
+.hero-historia h1 {
+  font-size: clamp(30px, 4.5vw, 48px);
+  margin-bottom: 12px;
+}
+.hero-historia p {
+  font-size: 1.1rem;
+}
+
+/* ===================== RESUMEN CORPORATIVO ===================== */
+.resumen-corporativo {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.resumen-corporativo h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.resumen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.resumen-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+.resumen-card:hover {
+  transform: translateY(-6px);
+}
+.resumen-card h3 {
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* ===================== TIMELINE ===================== */
+.timeline-section {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.timeline-section h2 {
+  margin-bottom: 28px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 10px;
+  padding: 20px 0;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 50%;
+  height: 4px;
+  background: #222;
+  opacity: 0.08;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+.hito {
+  position: relative;
+  z-index: 2;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.punto {
+  width: 14px;
+  height: 14px;
+  background: #111;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.hito time {
+  margin-top: 8px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+.burbuja {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: #fff;
+  width: 180px;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transition: all 0.25s ease;
+  text-align: center;
+  pointer-events: none;
+}
+.burbuja img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 6px;
+}
+.burbuja p {
+  margin-top: 5px;
+}
+.hito:hover .burbuja {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
+}
+.hito:hover time {
+  opacity: 0;
+}
+
+/* MOMENTOS */
+.momentos {
+  padding: 60px 20px;
+  background: #fafafa;
+}
+.momentos h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+.galeria-momentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.momento {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.momento img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.momento:hover img {
+  transform: scale(1.05);
+}
+.overlay-momento {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+}
+.momento:hover .overlay-momento {
+  opacity: 1;
+}
+
+/* ===================== TESTIMONIOS FLIP ===================== */
+.testimonios-flip {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+.testimonios-flip h2 {
+  margin-bottom: 28px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #111;
+}
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.flip-card-front {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.flip-card-front img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.flip-card-back {
+  background: #111;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-size: 0.95rem;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 32px 0;
+  margin-top: 28px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+}
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===================== MEDIA QUERIES ===================== */
+
+@media (min-width: 1200px) {
+  .resumen-corporativo h2,
+  .timeline-section h2,
+  .momentos h2,
+  .testimonios-flip h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center; 
+    gap: 40px; 
+    padding: 20px 0;
+  }
+  .timeline::before {
+    left: 50%;
+    right: auto;
+    width: 4px;
+    height: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hito {
+    width: 100%;
+    align-items: flex-start; 
+    padding-left: 20px; 
+  }
+  .burbuja {
+    top: -10px; 
+    left: 20px;
+    transform: none; 
+    width: 100%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1; 
+    pointer-events: auto; 
+    position: relative; 
+    margin-bottom: 10px; 
+  }
+  .hito time {
+    margin-left: 10px;
+    opacity: 1; 
+  }
+  .hito:hover .burbuja {
+    transform: none;
+  }
+}
+
+/* Breakpoint para móviles */
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+  .hamburguesa {
+    display: block;
+  }
+  .hero-historia h1 {
+    font-size: 28px;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-container nav a {
+    margin: 0 5px;
+  }
+}
+
+/* Breakpoint para móviles pequeños */
+@media (max-width: 480px) {
+  .resumen-grid {
+    grid-template-columns: 1fr;
+  }
+  .galeria-momentos {
+    grid-template-columns: 1fr; 
+  }
+  .flip-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline::before {
+    left: 50%;
+  }
+  .hito {
+    align-items: center; 
+    padding: 0;
+  }
+  .burbuja {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: 10px;
+  }
+}

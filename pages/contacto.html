@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/contacto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="/">LuxTime</a>
+        <button class="hamburguesa" id="btnHamburguesa" aria-label="Abrir menú">
+          ☰
+        </button>
+        <nav class="menu" id="menu">
+          <a href="/">Inicio</a>
+          <a href="/pages/catalogo.html">Catálogo</a>
+          <a href="/pages/historia.html">Historia</a>
+          <a href="/pages/contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main class="contacto">
+      <section class="formulario">
+        <h1>Contáctanos</h1>
+        <p class="lead">
+          ¿Tienes preguntas? Escríbenos y te responderemos pronto.
+        </p>
+
+        <form action="#" method="post" novalidate>
+          <label>
+            Nombre completo
+            <input
+              type="text"
+              name="nombre"
+              required
+              minlength="3"
+              placeholder="Tu nombre completo"
+            />
+            <span class="error"
+              >Por favor ingresa tu nombre (mínimo 3 caracteres).</span
+            >
+          </label>
+
+          <label>
+            Correo electrónico
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="tu@ejemplo.com"
+            />
+            <span class="error">Ingresa un correo electrónico válido.</span>
+          </label>
+
+          <label>
+            Teléfono
+            <input
+              type="tel"
+              name="telefono"
+              pattern="\+?\d{7,15}"
+              title="Solo números, 7 a 15 dígitos"
+              required
+              placeholder="+573001234567"
+            />
+            <span class="error"
+              >Ingresa un teléfono válido (7 a 15 dígitos).</span
+            >
+          </label>
+
+          <label>
+            Mensaje
+            <textarea
+              name="mensaje"
+              rows="5"
+              required
+              minlength="10"
+              placeholder="Escribe tu mensaje"
+            ></textarea>
+            <span class="error"
+              >Escribe un mensaje (mínimo 10 caracteres).</span
+            >
+          </label>
+
+          <div class="actions">
+            <button type="submit" class="btn">Enviar mensaje</button>
+          </div>
+        </form>
+      </section>
+      <aside class="info-contacto">
+        <h2>Información de contacto</h2>
+        <p>Email: <a href="contacto@luxtime.com">ontacto@luxtime.com</a></p>
+        <p>Teléfono: <a href="tel:+573001234567">+57 300 1234567</a></p>
+
+        <h3>Síguenos</h3>
+        <div class="redes">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 LuxTime — Todos los derechos reservados</p>
+        <nav><a href="#">Privacidad</a> | <a href="#">Términos</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>
